@@ -20,7 +20,37 @@ int main () {
             if (min >= 60){
                 min = 0;
                 hrs++;
+               if (day = 1) {
+                        std::cout << "Today is Monday." << std::endl;
+                        }
+                    else if (day = 2) {
+                        std::cout << "Today is Tuesday." << std::endl;
+                        }
+                    else if (day = 3) {
+                        std::cout << "Today is Wednesday." << std::endl;
+                        }
+                    else if (day = 4) {
+                        std::cout << "Today is Thursday." << std::endl;
+                        }
+                    else if (day = 5) {
+                        std::cout << "Today is Friday." << std::endl;
+                        }
+                    else if (day = 6) {
+                        std::cout << "Today is Saturday." << std::endl;
+                    }
+                }
+                else if(hrs<24){
+                    std::cout << "Today is Sunday." << std::endl;
+                }
+
+
+                
+            }
+        
+        }
+
             }
         }
     }
+
 }
