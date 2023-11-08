@@ -7,10 +7,10 @@ basic c++ library that hold all basic operations and commands as needed.
 #include <unistd.h>
 #include <string>
 
-Description
+# Description
 This is the code that will be used for the medication dispenser's timer. 
 
-Contributing
+# Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.****
