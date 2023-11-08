@@ -17,6 +17,10 @@ int main () {
         if (sec >= 60){
             sec = 0;
             min++;
+            if (min >= 60){
+                min = 0;
+                hrs++;
+            }
         }
     }
 }
