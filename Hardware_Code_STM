@@ -1,7 +1,7 @@
 #include "main.h"
 #include "stm32f4xx_hal.h"
 
-TIM_HandleTypeDef htim2;
+TTIM_HandleTypeDef htim2;
 
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
@@ -28,7 +28,9 @@ int main(void)
 
       if (buttonState == GPIO_PIN_SET)
       {
-        // Add code for buzzer and LED if needed
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);  // Set LED pin high
+        HAL_Delay(1000);
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_RESET);  // Reset LED pin
 
         if (servoPosition == 0)
         {
